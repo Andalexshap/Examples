@@ -1,8 +1,8 @@
 ﻿Console.Clear();
 
-int xa = 1, ya = 1,
+int xa = 40, ya = 1,
     xb = 1, yb = 30,
-    xc = 40, yc = 30;
+    xc = 80, yc = 30;
 
 Console.SetCursorPosition(xa, ya);
 Console.WriteLine("+");
@@ -13,7 +13,7 @@ Console.WriteLine("+");
 Console.SetCursorPosition(xc, yc);
 Console.WriteLine("+");
 
-int x = xa, y = ya;
+int x = xa, y = xb;
 int count = 0;
 
 while (count < 10000)
@@ -23,19 +23,19 @@ while (count < 10000)
     if (point == 0)
     {
         x = (x + xa) / 2;
-        y = (x + ya) / 2;
+        y = (y + ya) / 2;
     }
 
     if (point == 1)
     {
         x = (x + xb) / 2;
-        y = (x + yb) / 2;
+        y = (y + yb) / 2;
     }
 
     if (point == 2)
     {
         x = (x + xc) / 2;
-        y = (x + yc) / 2;
+        y = (y + yc) / 2;
     }
 
     Console.SetCursorPosition(x, y);
