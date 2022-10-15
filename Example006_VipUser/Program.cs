@@ -2,7 +2,7 @@
 
 string? userName = Console.ReadLine();
 
-if(userName.ToLower() == "маша")
+if(userName?.ToLower() == "маша")
 {
     Console.WriteLine("Привет, МАША!!!");
 }
